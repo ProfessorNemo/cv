@@ -39,7 +39,7 @@ p {
 }
 
 .wrapper {
-    background: #be3220;
+    background: #d42215;
     max-width: 960px;
     margin: 0 auto;
     position: relative;
@@ -49,7 +49,7 @@ p {
 }
 
 .sidebar-wrapper {
-    background: #be3220;
+    background: #6a7ce0;
     position: absolute;
     right: 0;
     width: 240px;
@@ -356,6 +356,19 @@ p {
     .main-wrapper .upper-row {
         margin-bottom: 0;
     }
+}
+
+p,
+span {
+    text-align: justify;
+    hyphens: auto
+    /* Выравнивание по ширине и знаки переноса текста */
+}
+
+h {
+    color: #000000;
+    font-size: 120%;
+    font-weight: bold;
 }
 
 
