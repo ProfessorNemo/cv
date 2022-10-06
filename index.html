@@ -244,25 +244,34 @@
                         </li>
                         <li><mark class="skill-item">Active Storage</mark> – images and files managing</li>
                         <li><mark class="skill-item">Action Mailer</mark> – mailing functions</li>
-                        <li><mark class="skill-item">Active Job, Redis</mark> – queuing and background jobs</li>
+                        <li><mark class="skill-item">Active Job, Redis, Sidekiq</mark> – queuing and background jobs</li>
                     </ul>
 
                     <div>
                         <h class="skill-group mb-2">Authentication and authorization</h>
                     </div>
                     <ul class="skill-list">
-                        <li><mark class="skill-item">Devise (in style)</mark> – modular authentication solution</li>
+                        <li><mark class="skill-item">Manual</mark> – without the use of libraries such as "device</li>
+                        <li><mark class="skill-item">Devise</mark> – modular authentication solution</li>
                         <li><mark class="skill-item">Pundit</mark> – user autorizaton</li>
                         </li>
+                    </ul>
+
+                    <div>
+                        <h class="skill-group mb-2">Working with zip archives, creating, importing, exporting, editing .xlsx files</h>
+                    </div>
+                    <ul class="skill-list">
+                        <li><mark class="skill-item">roo, rubyzip, caxlsx, caxlsx_rails, rubyXL, activerecord-import </mark> – without the use of libraries such as "device</li>
                     </ul>
 
                     <div>
                         <h class="skill-group mb-2">Frontend</h>
                     </div>
                     <ul class="skill-list">
-                        <li><mark class="skill-item">HTML + CSS</mark> – static page structure and design</li>
+                        <li><mark class="skill-item">HTML + CSS + SCSS</mark> – static page structure and design</li>
                         <li><mark class="skill-item">JavaScript</mark> – dynamic page behaviour, basics</li>
                         <li><mark class="skill-item">Bootstrap</mark> – pages design using CSS framework</li>
+                        <li><mark class="skill-item">tailwindcss</mark> – CSS framework for design</li>
                         <li><mark class="skill-item">Webpacker</mark> – Rails wrapper around the webpack build system
                         </li>
                     </ul>
@@ -274,8 +283,10 @@
                         <li><mark class="skill-item">Pry-rails</mark> – debug and refactoring</li>
                         <li><mark class="skill-item">Rspec</mark> – rails framework for unit and service testing</li>
                         <li><mark class="skill-item">FactoryBot</mark> – testing environment assistance</li>
+                        <li><mark class="skill-item">Webmock</mark> – for stubbing and setting expectations on HTTP requests in Ruby</li>
+                        <li><mark class="skill-item">Vcr</mark> – ecord your test suite's HTTP interactions and replay them during future test runs for fast, deterministic, accurate tests.</li>
                     </ul>
-
+                    .
                     <div>
                         <h class="skill-group mb-2">Other</h>
                     </div>
@@ -293,21 +304,20 @@
             <section class="section projects-section">
                 <h2 class="section-title"><i class="fa fa-archive"></i>Проекты</h2>
                 <div class="intro">
-                    <p>Несколько моих учебных проектов, для примера:</p>
+                    <p>Несколько моих проектов, для примера:</p>
                 </div>
 
                 <div class="intro">
                     <p class="remark">&ltRubyOnRails&gt</p>
                 </div>
                 <div class="item">
-                    <span class="project-title"><a href="https://github.com/ProfessorNemo/AskIt_on_Rails_6"
-                            target="_blank">AskIt_on_Rails_6
+                    <span class="project-title"><a href="https://github.com/ProfessorNemo/AskAns"
+                            target="_blank">AskAns
                             (github)</a></span> -
-                    <span class="project-tagline"> Учебное приложение Ruby on Rails (наподобие stackoverflow), в котором
-                        пользователь может
-                        отвечать на опубликованные вопросы или подсказки других пользователей, администрировать,
-                        изменять права допуска.
-                        Также можно писать вопросы и комментарии, редактировать, удалять, добавлять, загружать/выгружать
+                    <span class="project-tagline"> Приложение Ruby on Rails (наподобие ask.fm), в котором
+                        пользователь может задавать и отвечать на вопросы, создавать хэштеги, отправлять письма,
+                        администрировать (изменять права допуска),
+                        редактировать, удалять, добавлять, загружать/выгружать
                         и блокировать пользователей.
                     </span>
                 </div>
@@ -324,39 +334,38 @@
                         Если буква есть в слове, компьютер показывает, сколько раз она в нем встречается и на каких
                         местах. Если буквы нет, компьютер засчитывает ошибку. Если слово отгадано полностью, игрок
                         победил.
-                        После каждой ошибки, дорисовывается виселица. Всего можно сделать 7 ошибок.
+                        После каждой ошибки, дорисовывается виселица. Всего можно допустить не больше 7 ошибок.
                     </span>
                 </div>
 
                 <div class="item">
-                    <span class="project-title"><a href="https://github.com/ProfessorNemo/zodiac-horoscope"
-                            target="_blank">astrological_forecast(github)</a></span> -
-                    <span class="project-tagline">Парсер зодиакальных гороскопов.
+                    <span class="project-title"><a href="https://github.com/ProfessorNemo/astrological_forecast"
+                            target="_blank">gem "astrological_forecast"(github)</a></span> -
+                    <span class="project-tagline">Gem: парсер зодиакальных гороскопов с сайта <a href="https://orakul.com/">orakul.com</a>.
                         Программа спрашивает у пользователя дату рождения, а в качестве результата выводит в консоль
-                        название знака
-                        зодиака, диапазон дат рождения ему соответствующий, заголовок и сам прогноз на текущую дату, на
-                        следующий день, на неделю,
-                        на месяц или на год по запросу пользователя. Также есть возможность выбрать разновидность (тип)
-                        гороскопа.</span>
+                        название знака зодиака, диапазон дат ему соответствующий, заголовок и сам прогноз на текущую дату,
+                        на следующий день, на неделю, на месяц или на год по запросу пользователя.
+                        Также есть возможность выбрать разновидность (тип) гороскопа.
+                    </span>
                 </div>
 
                 <div class="item">
-                    <span class="project-title"><a href="https://github.com/ProfessorNemo/choose_movie"
-                            target="_blank">choose_movie(github)</a></span> -
-                    <span class="project-tagline">Консольное приложение с веб-скрейпингом, которое может помочь
-                        определиться с фильмом на вечер</span>
+                    <span class="project-title"><a href="https://github.com/ProfessorNemo/max_amount"
+                            target="_blank">gem "max_amount"(github)</a></span> -
+                    <span class="project-tagline">Gem: чтение из входящего потока текстовых данных,
+                        затем вывод "n" самых больших целых чисел в порядке убывания, встретившихся
+                        в полученных данных.</span>
                 </div>
 
                 <div class="item">
-                    <span class="project-title"><a href="https://github.com/ProfessorNemo/notepad"
-                            target="_blank">notepad(github)</a></span> -
-                    <span class="project-tagline">Представлен проект БД для блокнота, который пользуется SQlite-базой
-                        для хранения всех записей.
-                        Программа сохраняет новую запись в базе при добавлении и по запросу пользователя выводит
-                        последние записи определенного типа
-                        (задача - Task, заметка - Memo, ссылка - Link). С помощью SQlite-браузера создается база данных
-                        "notepad.sqlite" и в ней
-                        таблица для блокнота (см. доплонительные исчточники по SQL-запросам)</span>
+                    <span class="project-title"><a href="https://github.com/ProfessorNemo/Wardrobe"
+                            target="_blank">Wardrobe(github)</a></span> -
+                    <span class="project-tagline">Согласно текущей температуре воздуха на улице, приложение
+                           генерирует подходящий набор одежды. Используется информационный метеоресурс
+                           https://home.openweathermap.org с автоматическим определением температуры воздуха
+                           на улице по географическим координатам и ip-адресу. Программа поддерживает добавление
+                           новых предметов и типов одежды. Реализованы подходы на базе метапрограммирования для
+                           работы с результатами ответа от сервера, в том числе тестирование запросов к API.</span>
                 </div>
             </section>
 
@@ -373,7 +382,7 @@
                     <div class="item">
                         <h3 class="level-title">Ruby on Rails</h3>
                         <div class="level-bar">
-                            <div class="level-bar-inner" data-level="70%">
+                            <div class="level-bar-inner" data-level="65%">
                             </div>
                         </div>
                     </div>
@@ -381,7 +390,7 @@
                     <div class="item">
                         <h3 class="level-title">Object Orientated Programming</h3>
                         <div class="level-bar">
-                            <div class="level-bar-inner" data-level="67%">
+                            <div class="level-bar-inner" data-level="70%">
                             </div>
                         </div>
                     </div>
@@ -389,7 +398,7 @@
                     <div class="item">
                         <h3 class="level-title">MySQL</h3>
                         <div class="level-bar">
-                            <div class="level-bar-inner" data-level="35%">
+                            <div class="level-bar-inner" data-level="30%">
                             </div>
                         </div>
                     </div>
